@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -21,6 +21,11 @@
       <noscript>
         <div class="nojs">Javascript is either disabled or not supported in your browser. Please enable it or use a Javascript enabled browser</div>
       </noscript>
+
+      <div class="search-bar input-group">
+        <input class="form-control" type="text" ng-model-options="{ debounce: 800 }" ng-model="" onclick="" placeholder="Enter full movie title" autofocus />
+        <span class="input-group-addon bar-style"><i class="glyphicon glyphicon-search"></i></span>
+      </div>
 
     </div>
 
