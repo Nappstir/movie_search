@@ -3,7 +3,7 @@
 
   <ul class="rel-results">
     <li ng-repeat="movie in related.Search">
-      <a href="#">{{ movie.Title }}</a>, {{ movie.Year }}
+      <a href="#" ng-click="update(movie)">{{ movie.Title }}</a>, {{ movie.Year }}
     </li>
   </ul>
 </div>

@@ -56,3 +56,12 @@
 .divider-vertical:before {
   content: "|";
 }
+
+ul.rel-results {
+  list-style-type: circle;
+}
+
+.related-results {
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
