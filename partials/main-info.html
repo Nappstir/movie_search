@@ -3,7 +3,7 @@
 </div>
 
 <div ng-if="details.Response==='True'">
-  <img class="" ng-src="{{ details.Poster=='N/A' ? 'http://placehold.it/150x220&text=N/A' : details.Poster }}" alt="">
+  <img class="thumbnail movie-poster animated flip" ng-src="{{ details.Poster=='N/A' ? 'http://placehold.it/150x220&text=N/A' : details.Poster }}" alt="">
 
   <span class="span-outer">
     <a href="http://imdb.com/title/{{ details.imdbID }}" target="_blank">{{ details.Title }}</a>
@@ -32,11 +32,11 @@
 
 <p class="outer-p-3">
     <a ng-href="https://www.youtube.com/results?search_query={{ details.Title }}" target="_blank" class="btn btn-default btn-xs btn-info">Watch Trailers!</a>
-    <span class="divider"></span>
+    <span class="divider-vertical"></span>
     <a ng-href="http://subscene.com/subtitles/title?q={{ details.Title }}" target="_blank" class="btn btn-default btn-xs btn-info">Get Subtitles!</a>
-    <span class="divider"></span>
+    <span class="divider-vertical"></span>
     <a ng-href="http://www.theost.com/search/custom/?key={{ details.Title }}" target="_blank" class="btn btn-default btn-xs btn-info">Hear Soundtracks!</a>
-    <span class="divider"></span>
+    <span class="divider-vertical"></span>
     <a ng-href="http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Ddvd&field-keywords={{ details.Title }}" target="_blank" class="btn btn-default btn-xs btn-info">Buy this movie!</a>
   </p>
 </div>
