@@ -16,6 +16,15 @@ angular.module('myApp', [])
       .then(function(response){
         $scope.related = response.data;
       });
+
+      reAnimate();
+    }
+
+    function reAnimate(){
+      $("#movie-poster").removeClass("animated flip")
+      setTimeout(function(){
+        $("#movie-poster").addClass("animated flip");
+      }, 100);
     }
 
     $scope.update = function(movie){
