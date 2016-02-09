@@ -15,8 +15,8 @@ angular.module('myApp', [])
       $http.get("http://omdbapi.com/?s=" + $scope.search)
       .then(function(response){
         $scope.related = response.data;
-        console.log(response)
-        console.log(response.data)
+        console.log("you are here")
+        console.log($scope.related)
       });
     }
 
