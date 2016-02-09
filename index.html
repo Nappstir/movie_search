@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp" ng-controller="MovieController">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,11 +20,12 @@
 
       <noscript>
         <div class="nojs">Javascript is either disabled or not supported in your browser. Please enable it or use a Javascript enabled browser</div>
+        <div class="nojs">Javascript is either disabled or not supported in your browser. Please enable it or use a Javascript enabled browser</div>
       </noscript>
 
       <div class="animated zoonInRight">
         <div class="search-bar input-group">
-          <input class="form-control" type="text" ng-model-options="{ debounce: 800 }" ng-model="" onclick="" placeholder="Enter full movie title" autofocus />
+          <input class="form-control" type="text" ng-model-options="{ debounce: 800 }" ng-model="search" onclick="" placeholder="Enter full movie title" autofocus />
           <span class="input-group-addon bar-style"><i class="glyphicon glyphicon-search"></i></span>
         </div>
       </div>
@@ -32,7 +33,7 @@
       <div class="col-md-8" id="main-info" ng-include="'partials/main-info.html'">
       </div>
 
-      <div class="col-md-4" id="related-results" ng-include="'partials/related-results.html"></div>
+      <!-- <div class="col-md-4" id="related-results" ng-include="'partials/related-results.html"></div> -->
 
     </div>
 
